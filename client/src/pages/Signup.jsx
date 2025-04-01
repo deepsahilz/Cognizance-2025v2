@@ -93,7 +93,7 @@ const Signup = () => {
       <div className="absolute top-1/4 left-1/4 w-8 h-8 bg-[#FF6EC7] opacity-10 rounded-full"></div>
       <div className="absolute bottom-1/4 right-1/4 w-8 h-8 bg-[#3EDBD3] opacity-10 rounded-full"></div>
 
-      <div className="w-full max-w-6xl bg-[#1E293B] rounded-xl shadow-2xl overflow-hidden flex flex-col md:flex-row border border-[#283548]">
+      <div className="w-full max-w-5xl bg-[#1E293B]  rounded-xl shadow-2xl overflow-hidden flex flex-col md:flex-row border border-[#283548]">
         {/* Left panel with branding */}
         <div className="bg-gradient-to-br from-[#0B1120] to-[#1E293B] md:w-2/5 p-10 hidden md:flex md:flex-col md:justify-between relative">
           <div className="absolute inset-0 overflow-hidden">
@@ -170,7 +170,7 @@ const Signup = () => {
         </div>
 
         {/* Right panel with form */}
-        <div className="w-full md:w-3/5 py-12 px-6 md:px-16 relative">
+        <div className="w-full md:w-3/5 py-5 px-6 md:px-16 relative">
           {/* Loading overlay */}
           {isSubmitting && (
             <div className="absolute inset-0 bg-[#0F172A] bg-opacity-75 backdrop-blur-sm flex items-center justify-center z-50 transition-all duration-300">
@@ -548,12 +548,7 @@ const Signup = () => {
                 )}
               </button>
 
-              <div className="relative flex items-center justify-center my-6">
-                <div className="absolute border-t border-[#283548] w-full"></div>
-                <div className="relative bg-[#1E293B] px-4 text-sm text-[#94A3B8]">
-                  or continue with
-                </div>
-              </div>
+             
 
               {/* Google button */}
               <button
